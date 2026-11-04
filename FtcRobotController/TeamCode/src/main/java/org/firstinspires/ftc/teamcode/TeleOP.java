@@ -21,10 +21,10 @@ public class TeleOP extends LinearOpMode {
     @Override
     public void runOpMode() {
         // Hardware config names: 0=FrontRight, 1=BackRight, 2=FrontLeft, 3=BackLeft
-        frontRightDrive = hardwareMap.get(DcMotorEx.class, "FrontLeft  ");
-        rearRightDrive  = hardwareMap.get(DcMotorEx.class, "BackLeft");
-        frontLeftDrive  = hardwareMap.get(DcMotorEx.class, "FrontRight");
-        rearLeftDrive   = hardwareMap.get(DcMotorEx.class, "BackRight");
+        frontRightDrive = hardwareMap.get(DcMotorEx.class, "FrontRight");
+        rearRightDrive  = hardwareMap.get(DcMotorEx.class, "BackRight");
+        frontLeftDrive  = hardwareMap.get(DcMotorEx.class, "FrontLeft");
+        rearLeftDrive   = hardwareMap.get(DcMotorEx.class, "BackLeft");
 
         // Mecanum wheels on the left side must be reversed so positive power = forward
         frontLeftDrive.setDirection(DcMotor.Direction.REVERSE);
